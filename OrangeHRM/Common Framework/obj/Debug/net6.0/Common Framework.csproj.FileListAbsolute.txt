@@ -1,0 +1,5 @@
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.csproj.AssemblyReference.cache
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.AssemblyInfoInputs.cache
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.AssemblyInfo.cs
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.csproj.CoreCompileInputs.cache
