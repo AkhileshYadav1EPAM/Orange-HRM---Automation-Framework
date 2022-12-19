@@ -3,3 +3,14 @@ C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHR
 C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.AssemblyInfoInputs.cache
 C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.AssemblyInfo.cs
 C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.csproj.CoreCompileInputs.cache
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\Common Framework.deps.json
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\Common Framework.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\bin\Debug\net6.0\Common Framework.pdb
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\refint\Common Framework.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\Common Framework.pdb
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\Common Framework\obj\Debug\net6.0\ref\Common Framework.dll

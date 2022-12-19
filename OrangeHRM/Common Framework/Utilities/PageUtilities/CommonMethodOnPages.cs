@@ -1,24 +1,33 @@
-﻿using OpenQA.Selenium;
+﻿using AngleSharp.Dom;
+using Common_Framework.BrowserInvocation;
+using Common_Framework.Extension_Method;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Common_Framework.Utilities.PageUtilities
 {
     public static class CommonMethodOnPages
     {
+        public static WebDriverWait webDriverWait;
+        public static void WebDriverWaiting(By elementToWait)
+        {
+            webDriverWait = webDriverWait.ShorterWait();
+            webDriverWait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(elementToWait));
+        }
+        public static void NavigateToURL(string url)
+        {
+            InvokeTheBrowser.driver.Navigate().GoToUrl(url);
+        }
         public static void SendKeysToInputField(By elementToSendKeys, string key)
         {
-            driver.FindElement(elementToSendKeys).SendKeys(key);
+            InvokeTheBrowser.driver.FindElement(elementToSendKeys).SendKeys(key);
         }
 
         public static void ClickOnElement(By elementToClick)
         {
-            driver.FindElement(elementToClick).Click();
-        }
-
-        public static void DropDownSelection(By dropDownElement, string key)
-        {
-            SelectElement dropDownUserRole = new SelectElement(driver.FindElement(dropDownElement));
-            dropDownUserRole.SelectByText("Admin");
+            InvokeTheBrowser.driver.FindElement(elementToClick).Click();
         }
 
         public static IList<string> GetListOfEmployeeUserName(IList<IWebElement> listOfRecordFound)

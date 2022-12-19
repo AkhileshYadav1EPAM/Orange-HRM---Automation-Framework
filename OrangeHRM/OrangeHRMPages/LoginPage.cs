@@ -1,5 +1,9 @@
 ﻿using OpenQA.Selenium;
 using Common_Framework.Utilities.PageUtilities;
+using Common_Framework.Extension_Method;
+using Common_Framework.BrowserInvocation;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 namespace OrangeHRMPages
 {
@@ -15,14 +19,15 @@ namespace OrangeHRMPages
 
         #region Actions
 
-        public void EnterUserName()
+        public void EnterUserName(string username)
         {
-            CommonMethodOnPages.SendKeysToInputField(usernameTextField, "Admin");
+            CommonMethodOnPages.WebDriverWaiting(usernameTextField);
+            CommonMethodOnPages.SendKeysToInputField(usernameTextField, username);
         }
 
-        public void EnterPassword()
+        public void EnterPassword(string password)
         {
-            CommonMethodOnPages.SendKeysToInputField(passwordTextField, "admin123");
+            CommonMethodOnPages.SendKeysToInputField(passwordTextField, password);
         }
 
         public void ClickOnTheLogInButton()

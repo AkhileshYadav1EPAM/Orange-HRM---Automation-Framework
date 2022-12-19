@@ -1,4 +1,5 @@
-﻿using Common_Framework.Utilities.PageUtilities;
+﻿using Common_Framework.BrowserInvocation;
+using Common_Framework.Utilities.PageUtilities;
 using OpenQA.Selenium;
 
 namespace OrangeHRM_Pages.Admin
@@ -9,6 +10,7 @@ namespace OrangeHRM_Pages.Admin
 
         #region Locators
 
+        By adminButton => By.XPath("(//span[contains(string(), 'Admin')])[1]");
         By usernameField => By.XPath("(//input[@class=\"oxd-input oxd-input--active\"])[2]");
         By searchButton => By.XPath("//button[@type=\"submit\"]");
         By resetButton => By.XPath("//button[@class=\"oxd-button oxd-button--medium oxd-button--ghost\"]");
@@ -19,8 +21,14 @@ namespace OrangeHRM_Pages.Admin
 
         #region Actions
 
+        public void ClickOnAdminButton()
+        {
+            CommonMethodOnPages.WebDriverWaiting(adminButton);
+            CommonMethodOnPages.ClickOnElement(adminButton);
+        }
         public void EnterUsername()
         {
+            CommonMethodOnPages.WebDriverWaiting(usernameField);
             CommonMethodOnPages.SendKeysToInputField(usernameField, "John Smith");
         }
         public void ClickOnSearchButton()
@@ -35,12 +43,14 @@ namespace OrangeHRM_Pages.Admin
 
         public void ClickOnAddButton()
         {
+            CommonMethodOnPages.WebDriverWaiting(addButton);
             CommonMethodOnPages.ClickOnElement(addButton);
         }
 
         public void GetAllRecordFound()
         {
-            IList<IWebElement> recordFound = driver.FindElements(oneRecordDetial);
+            CommonMethodOnPages.WebDriverWaiting(oneRecordDetial);
+            IList<IWebElement> recordFound = InvokeTheBrowser.driver.FindElements(oneRecordDetial);
 
             int numberOfRecordFound = recordFound.Count();
 
@@ -51,7 +61,8 @@ namespace OrangeHRM_Pages.Admin
 
         public void VerificationIfUserIsDisplayedOnSearch(string userName)
         {
-            if(listOfEmployeeUserName.Count > 0)
+            CommonMethodOnPages.WebDriverWaiting(usernameField);
+            if (listOfEmployeeUserName.Count > 0)
             {
                 CommonMethodOnPages.SendKeysToInputField(usernameField, listOfEmployeeUserName[0]);
                 CommonMethodOnPages.ClickOnElement(searchButton);
