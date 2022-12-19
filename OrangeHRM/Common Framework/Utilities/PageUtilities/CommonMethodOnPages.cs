@@ -20,5 +20,19 @@ namespace Common_Framework.Utilities.PageUtilities
             SelectElement dropDownUserRole = new SelectElement(driver.FindElement(dropDownElement));
             dropDownUserRole.SelectByText("Admin");
         }
+
+        public static IList<string> GetListOfEmployeeUserName(IList<IWebElement> listOfRecordFound)
+        {
+            IList<string> listOfEmployeeUserName = new List<string>();
+
+            foreach(IWebElement element in listOfRecordFound)
+            {
+                string username = element.FindElement(By.XPath("(//div[@class=\"oxd-table-cell oxd-padding-cell\"])[2]")).Text;
+
+                listOfEmployeeUserName.Add(username);
+            }
+
+            return listOfEmployeeUserName;
+        }
     }
 }

@@ -73,6 +73,14 @@
               "target": "Package",
               "version": "[0.32.0, )"
             },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
             "WebDriverManager": {
               "target": "Package",
               "version": "[2.16.2, )"
@@ -170,6 +178,14 @@
             "Selenium.WebDriver.GeckoDriver": {
               "target": "Package",
               "version": "[0.32.0, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             },
             "WebDriverManager": {
               "target": "Package",
@@ -286,11 +302,15 @@
             },
             "SpecFlow.NUnit": {
               "target": "Package",
-              "version": "[3.9.40, )"
+              "version": "[3.9.74, )"
             },
             "SpecFlow.Plus.LivingDocPlugin": {
               "target": "Package",
               "version": "[3.9.57, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             },
             "WebDriverManager": {
               "target": "Package",
