@@ -1,0 +1,139 @@
+{
+  "uuid": "ef4fc92c1a41400e81d606471b54819d",
+  "historyId": "Add And Verify User Addition In Recruitment Page",
+  "fullName": "Add And Verify User Addition In Recruitment Page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "EPINHYDW058F"
+    },
+    {
+      "name": "feature",
+      "value": "Add And Verify User Addition In Recruitment Page"
+    }
+  ],
+  "links": [],
+  "name": "Add And Verify User Addition In Recruitment Page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  the user is successfully logged in to OrangeHRM",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054436566,
+      "stop": 1672054436576
+    },
+    {
+      "name": "When  user clicks on the Recruitment button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054436577,
+      "stop": 1672054439567
+    },
+    {
+      "name": "And  user clicks on the Recruitment Add button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054439567,
+      "stop": 1672054441522
+    },
+    {
+      "name": "And  user enters the Full Name",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054441522,
+      "stop": 1672054442402
+    },
+    {
+      "name": "And  user enters the Email",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054442402,
+      "stop": 1672054442670
+    },
+    {
+      "name": "And  user clicks on Save button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054442670,
+      "stop": 1672054442734
+    },
+    {
+      "name": "Then  verify if the user is added",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054442734,
+      "stop": 1672054447296
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1672054436556,
+  "stop": 1672054447298
+}

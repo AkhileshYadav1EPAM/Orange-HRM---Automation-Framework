@@ -1,0 +1,43 @@
+{
+  "uuid": "0994211c60434049bdf00c63624f76d1",
+  "children": [
+    "d8f62f036a1744de9e0e92bb00b06d1d"
+  ],
+  "befores": [
+    {
+      "name": "LoginBeforeEveryScenario [10000]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054483864,
+      "stop": 1672054500169
+    }
+  ],
+  "afters": [
+    {
+      "name": "LogoutAfterEveryScenario [10000]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054506147,
+      "stop": 1672054507142
+    }
+  ],
+  "links": [],
+  "start": 1672054483864,
+  "stop": 1672054507164
+}

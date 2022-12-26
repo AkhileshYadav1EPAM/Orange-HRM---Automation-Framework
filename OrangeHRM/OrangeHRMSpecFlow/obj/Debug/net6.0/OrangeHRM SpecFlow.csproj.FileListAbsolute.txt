@@ -192,3 +192,8 @@ C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHR
 C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\obj\Debug\net6.0\OrangeHRM SpecFlow.pdb
 C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\obj\Debug\net6.0\OrangeHRM SpecFlow.genruntimeconfig.cache
 C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\obj\Debug\net6.0\ref\OrangeHRM SpecFlow.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\bin\Debug\net6.0\specflow.json
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\bin\Debug\net6.0\Allure.Commons.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\bin\Debug\net6.0\MimeTypesMap.dll
+C:\Users\Akhilesh_Yadav1\Desktop\C# Example Codes\1 - Selenium projects\OrangeHRM Automation Framework\OrangeHRM\OrangeHRMSpecFlow\bin\Debug\net6.0\Allure.SpecFlowPlugin.dll

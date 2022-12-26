@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Allure.Commons/3.5.0.73": {
+        "type": "package",
+        "dependencies": {
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "AngleSharp/0.17.1": {
         "type": "package",
         "dependencies": {
@@ -33,6 +53,19 @@
         },
         "build": {
           "build/_._": {}
+        }
+      },
+      "CsvHelper/27.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DnsClient/1.2.0": {
@@ -1564,6 +1597,15 @@
           }
         }
       },
+      "MimeTypesMap/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        }
+      },
       "MongoDB.Bson/2.10.0": {
         "type": "package",
         "dependencies": {
@@ -2005,6 +2047,28 @@
           "build/SpecFlow.targets": {}
         }
       },
+      "SpecFlow.Allure/3.5.0.73": {
+        "type": "package",
+        "dependencies": {
+          "Allure.Commons": "3.5.0.73",
+          "CsvHelper": "27.1.0",
+          "SpecFlow": "[3.9.8, 3.10.0)",
+          "System.Collections.Specialized": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.SpecFlowPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.SpecFlowPlugin.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/allureConfig.Template.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "SpecFlow.Internal.Json/1.0.8": {
         "type": "package",
         "compile": {
@@ -2151,15 +2215,15 @@
           }
         }
       },
-      "System.Collections.NonGeneric/4.0.1": {
+      "System.Collections.NonGeneric/4.3.0": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Collections.NonGeneric.dll": {
@@ -2170,16 +2234,16 @@
           "lib/netstandard1.3/System.Collections.NonGeneric.dll": {}
         }
       },
-      "System.Collections.Specialized/4.0.1": {
+      "System.Collections.Specialized/4.3.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections.NonGeneric": "4.0.1",
-          "System.Globalization": "4.0.11",
-          "System.Globalization.Extensions": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Globalization.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Collections.Specialized.dll": {
@@ -3858,6 +3922,7 @@
           "Selenium.WebDriver": "4.7.0",
           "Selenium.WebDriver.ChromeDriver": "108.0.5359.7100",
           "Selenium.WebDriver.GeckoDriver": "0.32.0",
+          "SpecFlow.Allure": "3.5.0.73",
           "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.74",
           "WebDriverManager": "2.16.2"
@@ -3881,6 +3946,7 @@
           "Selenium.WebDriver": "4.7.0",
           "Selenium.WebDriver.ChromeDriver": "108.0.5359.7100",
           "Selenium.WebDriver.GeckoDriver": "0.32.0",
+          "SpecFlow.Allure": "3.5.0.73",
           "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.74",
           "WebDriverManager": "2.16.2"
@@ -3895,6 +3961,23 @@
     }
   },
   "libraries": {
+    "Allure.Commons/3.5.0.73": {
+      "sha512": "cqMlst9Za1TfOsgN2fWzMkdUeOTy07AZHaudOuRVAjTyBmUxDKOKxCwlkxO1Xw91ogsPCdXIJdduUtFFGw+Thw==",
+      "type": "package",
+      "path": "allure.commons/3.5.0.73",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "allure-net.png",
+        "allure.commons.3.5.0.73.nupkg.sha512",
+        "allure.commons.nuspec",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net45/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net45/Allure.Commons.dll",
+        "lib/netstandard2.0/Allure.Commons.dll"
+      ]
+    },
     "AngleSharp/0.17.1": {
       "sha512": "5MPI4bbixlwxb0W/smOMeIR+QlxMy5/5jD+WnIAw4pBC+7AhLPe5bS3cLgQMJyvd6q0A48sG+uYOt/ep406GLA==",
       "type": "package",
@@ -3930,6 +4013,28 @@
         "lib/netstandard2.0/BoDi.dll",
         "lib/netstandard2.0/BoDi.pdb",
         "tools/_._"
+      ]
+    },
+    "CsvHelper/27.1.0": {
+      "sha512": "nrUpgvwEOq6xcdpvAMV0bnzVz1mHcPy9LjWXVbZq9pKs5nWdVFmUMoiEBsxY9+f1mR2Rdk0fOkK91OstYjTVxA==",
+      "type": "package",
+      "path": "csvhelper/27.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.27.1.0.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
       ]
     },
     "DnsClient/1.2.0": {
@@ -5274,6 +5379,20 @@
         "version.txt"
       ]
     },
+    "MimeTypesMap/1.0.8": {
+      "sha512": "iOm6Zar+yVROhlyrGGSJTfThvNoHLUeYeQQND9YD/ot/nA2qsWUp9kP2MHTdF9P7I8afW6eCf8vdELLZjDFdSQ==",
+      "type": "package",
+      "path": "mimetypesmap/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MimeTypesMap.dll",
+        "lib/netstandard1.1/MimeTypesMap.dll",
+        "lib/netstandard2.0/MimeTypesMap.dll",
+        "mimetypesmap.1.0.8.nupkg.sha512",
+        "mimetypesmap.nuspec"
+      ]
+    },
     "MongoDB.Bson/2.10.0": {
       "sha512": "KMUjSQ4jSDkAtMRod/tTRkMmiPnu6e7GqhLOPWkLvtY/uHKmn4BXp82wF2Cwd+kktW1GtOQA7wgP9YpGhQDVow==",
       "type": "package",
@@ -5961,6 +6080,23 @@
         "specflow.nuspec"
       ]
     },
+    "SpecFlow.Allure/3.5.0.73": {
+      "sha512": "ohS1oUQ14tfqT+Ri/sQZnWmUPSATx3QNcFpzmND5Qn6/fSS2SFtVYZ8K0ZulBq/bAP2BiPR0cLXwslDB+Irx6A==",
+      "type": "package",
+      "path": "specflow.allure/3.5.0.73",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "allure-specflow.png",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net461/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net461/Allure.SpecFlowPlugin.dll",
+        "lib/netstandard2.0/Allure.SpecFlowPlugin.dll",
+        "specflow.allure.3.5.0.73.nupkg.sha512",
+        "specflow.allure.nuspec"
+      ]
+    },
     "SpecFlow.Internal.Json/1.0.8": {
       "sha512": "lVCC/Rie7N5rFoc7YxPS0nneLfsWSTIMMlkndwxhaD8MxBp3Bsv1HeiVjVwXCjWaQeoqZcvIy52fF5Xit00ZLw==",
       "type": "package",
@@ -6507,10 +6643,10 @@
         "system.collections.immutable.nuspec"
       ]
     },
-    "System.Collections.NonGeneric/4.0.1": {
-      "sha512": "hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA==",
+    "System.Collections.NonGeneric/4.3.0": {
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
-      "path": "system.collections.nongeneric/4.0.1",
+      "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6542,14 +6678,14 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.collections.nongeneric.4.0.1.nupkg.sha512",
+        "system.collections.nongeneric.4.3.0.nupkg.sha512",
         "system.collections.nongeneric.nuspec"
       ]
     },
-    "System.Collections.Specialized/4.0.1": {
-      "sha512": "/HKQyVP0yH1I0YtK7KJL/28snxHNH/bi+0lgk/+MbURF6ULhAE31MDI+NZDerNWu264YbxklXCCygISgm+HMug==",
+    "System.Collections.Specialized/4.3.0": {
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
-      "path": "system.collections.specialized/4.0.1",
+      "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6581,7 +6717,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.collections.specialized.4.0.1.nupkg.sha512",
+        "system.collections.specialized.4.3.0.nupkg.sha512",
         "system.collections.specialized.nuspec"
       ]
     },
@@ -10860,6 +10996,7 @@
       "Selenium.WebDriver >= 4.7.0",
       "Selenium.WebDriver.ChromeDriver >= 108.0.5359.7100",
       "Selenium.WebDriver.GeckoDriver >= 0.32.0",
+      "SpecFlow.Allure >= 3.5.0.73",
       "SpecFlow.NUnit >= 3.9.74",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
       "SpecFlow.Tools.MsBuild.Generation >= 3.9.74",
@@ -10958,6 +11095,10 @@
           "Selenium.WebDriver.GeckoDriver": {
             "target": "Package",
             "version": "[0.32.0, )"
+          },
+          "SpecFlow.Allure": {
+            "target": "Package",
+            "version": "[3.5.0.73, )"
           },
           "SpecFlow.NUnit": {
             "target": "Package",

@@ -1,0 +1,139 @@
+{
+  "uuid": "cddc240dc88a4c4bb940ea548ab13f76",
+  "historyId": "Search user on leave page",
+  "fullName": "Search user on leave page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "EPINHYDW058F"
+    },
+    {
+      "name": "feature",
+      "value": "Search User On Leave Page"
+    }
+  ],
+  "links": [],
+  "name": "Search user on leave page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  the user is successfully logged in to OrangeHRM",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054543929,
+      "stop": 1672054543929
+    },
+    {
+      "name": "When  user clicks on the Leave button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054543929,
+      "stop": 1672054547415
+    },
+    {
+      "name": "And  user verify if the leave record found in admin page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054547415,
+      "stop": 1672054549072
+    },
+    {
+      "name": "And  user takes start date and end date from one of the record",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054549072,
+      "stop": 1672054549134
+    },
+    {
+      "name": "And  user put that start date and end date in To Date Field",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054549134,
+      "stop": 1672054549948
+    },
+    {
+      "name": "And  user clicks on the Search button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054549948,
+      "stop": 1672054549994
+    },
+    {
+      "name": "Then  verify that the reocrd is displayed or not",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054549994,
+      "stop": 1672054550533
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1672054543929,
+  "stop": 1672054550533
+}

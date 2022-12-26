@@ -1,0 +1,139 @@
+{
+  "uuid": "e54f5fe1559245aa82b5c1d34e763ae0",
+  "historyId": "Search Employee In Time Page",
+  "fullName": "Search Employee In Time Page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "EPINHYDW058F"
+    },
+    {
+      "name": "feature",
+      "value": "Search Employee In Time Page"
+    }
+  ],
+  "links": [],
+  "name": "Search Employee In Time Page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  the user is successfully logged in to OrangeHRM",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054523395,
+      "stop": 1672054523395
+    },
+    {
+      "name": "When  user clicks on the Time button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054523395,
+      "stop": 1672054526492
+    },
+    {
+      "name": "And  user verify if the time record found in time page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054526492,
+      "stop": 1672054527721
+    },
+    {
+      "name": "And  user takes the employee name from one of the found record",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054527722,
+      "stop": 1672054527778
+    },
+    {
+      "name": "And  user enters the employee name",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054527778,
+      "stop": 1672054527891
+    },
+    {
+      "name": "And  user clicks on the view button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054527891,
+      "stop": 1672054527928
+    },
+    {
+      "name": "Then  verify that the time result is displayed or not",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054527928,
+      "stop": 1672054527948
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1672054523395,
+  "stop": 1672054527949
+}

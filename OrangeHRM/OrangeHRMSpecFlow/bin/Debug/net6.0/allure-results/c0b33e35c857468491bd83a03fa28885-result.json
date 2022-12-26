@@ -1,0 +1,214 @@
+{
+  "uuid": "ead9751cd7cc4b70ac8d650450cdea7f",
+  "historyId": "Add User From Admin Page",
+  "fullName": "Add User From Admin Page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "EPINHYDW058F"
+    },
+    {
+      "name": "feature",
+      "value": "Adding User From The Admin Page"
+    }
+  ],
+  "links": [],
+  "name": "Add User From Admin Page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  the user is successfully logged in to OrangeHRM",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054472926,
+      "stop": 1672054472926
+    },
+    {
+      "name": "When  user clicks on the Admin button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054472927,
+      "stop": 1672054476216
+    },
+    {
+      "name": "And  user clicks on the Add button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054476216,
+      "stop": 1672054477515
+    },
+    {
+      "name": "And  user selects the User Role",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054477515,
+      "stop": 1672054478188
+    },
+    {
+      "name": "And  user gives the Employee Name",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054478188,
+      "stop": 1672054481437
+    },
+    {
+      "name": "And  user selects the Status",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481437,
+      "stop": 1672054481538
+    },
+    {
+      "name": "And  user gives the Username",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481538,
+      "stop": 1672054481642
+    },
+    {
+      "name": "And  user gives the Password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481642,
+      "stop": 1672054481760
+    },
+    {
+      "name": "And  user gives the Confirm Password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481760,
+      "stop": 1672054481879
+    },
+    {
+      "name": "And  user clicks on the Save button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481879,
+      "stop": 1672054481917
+    },
+    {
+      "name": "Then  the user is successfully added",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481917,
+      "stop": 1672054481918
+    },
+    {
+      "name": "And  user is logged out successfully",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054481918,
+      "stop": 1672054481918
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1672054472926,
+  "stop": 1672054481918
+}

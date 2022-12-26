@@ -1,0 +1,124 @@
+{
+  "uuid": "d8f62f036a1744de9e0e92bb00b06d1d",
+  "historyId": "Search user from Admin page",
+  "fullName": "Search user from Admin page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "EPINHYDW058F"
+    },
+    {
+      "name": "feature",
+      "value": "Adding User From The Admin Page"
+    }
+  ],
+  "links": [],
+  "name": "Search user from Admin page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  the user is successfully logged in to OrangeHRM",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054500170,
+      "stop": 1672054500170
+    },
+    {
+      "name": "When  user clicks on the Admin button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054500170,
+      "stop": 1672054502914
+    },
+    {
+      "name": "And  user verify if the record found in admin page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054502914,
+      "stop": 1672054505330
+    },
+    {
+      "name": "And  user enters the username, taken from one of the record found",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054505330,
+      "stop": 1672054506146
+    },
+    {
+      "name": "Then  verify is the result is displayed or not",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054506146,
+      "stop": 1672054506147
+    },
+    {
+      "name": "And  user is logged out successfully",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1672054506147,
+      "stop": 1672054506147
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1672054500170,
+  "stop": 1672054506147
+}
