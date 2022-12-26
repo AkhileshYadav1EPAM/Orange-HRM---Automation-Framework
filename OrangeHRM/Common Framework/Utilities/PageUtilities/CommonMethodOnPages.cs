@@ -19,9 +19,14 @@ namespace Common_Framework.Utilities.PageUtilities
         public static void NavigateToURL(string url)
         {
             InvokeTheBrowser.driver.Navigate().GoToUrl(url);
+            InvokeTheBrowser.driver.Manage().Window.Maximize();
         }
+
+        //extension method
         public static void SendKeysToInputField(By elementToSendKeys, string key)
         {
+            CommonMethodOnPages.WebDriverWaiting(elementToSendKeys);
+            InvokeTheBrowser.driver.FindElement(elementToSendKeys).Clear();
             InvokeTheBrowser.driver.FindElement(elementToSendKeys).SendKeys(key);
         }
 

@@ -7,9 +7,7 @@ using OpenQA.Selenium;
 namespace OrangeHRM_Pages.Admin
 {
     public class AddUserPage
-    {
-        string adminPageURL = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
-
+    { 
         #region Locators
 
         By userRoleField => By.XPath("(//div[@class=\"oxd-select-text-input\"])[1]");
@@ -23,6 +21,7 @@ namespace OrangeHRM_Pages.Admin
 
         #endregion
 
+        #region Actions
         public void SelectUserRole()
         {
             CommonMethodOnPages.WebDriverWaiting(userRoleField);
@@ -66,10 +65,6 @@ namespace OrangeHRM_Pages.Admin
 
             Assert.IsTrue(currectURL.Equals(adminPageURL));
         }*/
-        #region Locators
-
-
-
         #endregion
     }
 }

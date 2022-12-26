@@ -6,7 +6,7 @@ namespace OrangeHRM_Pages.Admin
 {
     public class AdminPage
     {
-        IList<string> listOfEmployeeUserName;
+        private IList<string> listOfEmployeeUserName;
 
         #region Locators
 
@@ -26,11 +26,13 @@ namespace OrangeHRM_Pages.Admin
             CommonMethodOnPages.WebDriverWaiting(adminButton);
             CommonMethodOnPages.ClickOnElement(adminButton);
         }
+
         public void EnterUsername()
         {
             CommonMethodOnPages.WebDriverWaiting(usernameField);
             CommonMethodOnPages.SendKeysToInputField(usernameField, "John Smith");
         }
+
         public void ClickOnSearchButton()
         {
             CommonMethodOnPages.ClickOnElement(searchButton);
@@ -47,19 +49,17 @@ namespace OrangeHRM_Pages.Admin
             CommonMethodOnPages.ClickOnElement(addButton);
         }
 
-        public void GetAllRecordFound()
+        public int GetAllRecordFound()
         {
             CommonMethodOnPages.WebDriverWaiting(oneRecordDetial);
             IList<IWebElement> recordFound = InvokeTheBrowser.driver.FindElements(oneRecordDetial);
 
-            int numberOfRecordFound = recordFound.Count();
-
             listOfEmployeeUserName = CommonMethodOnPages.GetListOfEmployeeUserName(recordFound);
 
-            Console.WriteLine("Record found - " + listOfEmployeeUserName.Count);
+            return listOfEmployeeUserName.Count;
         }
 
-        public void VerificationIfUserIsDisplayedOnSearch(string userName)
+        public int VerificationIfUserIsDisplayedOnSearch()
         {
             CommonMethodOnPages.WebDriverWaiting(usernameField);
             if (listOfEmployeeUserName.Count > 0)
@@ -67,11 +67,11 @@ namespace OrangeHRM_Pages.Admin
                 CommonMethodOnPages.SendKeysToInputField(usernameField, listOfEmployeeUserName[0]);
                 CommonMethodOnPages.ClickOnElement(searchButton);
 
-                GetAllRecordFound();
+                return GetAllRecordFound();
             }
             else
             {
-                Console.WriteLine("No User Is Displayed");
+                return -1;
             }
         }
 

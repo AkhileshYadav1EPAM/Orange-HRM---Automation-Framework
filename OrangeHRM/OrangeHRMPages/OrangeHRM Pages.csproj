@@ -7,15 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Leave\" />
     <Folder Include="My Info\" />
     <Folder Include="DashBroad\" />
     <Folder Include="Directory\" />
     <Folder Include="Maintenance\" />
     <Folder Include="Buzz\" />
     <Folder Include="Performance\" />
-    <Folder Include="Recruitment\" />
-    <Folder Include="Time\" />
     <Folder Include="PIM\" />
   </ItemGroup>
 

@@ -1,43 +1,16 @@
 using Common_Framework.BrowserInvocation;
 using Common_Framework.Utilities.PageUtilities;
+using NUnit.Framework;
 using OrangeHRM_Pages.Admin;
 using OrangeHRMPages;
 
 namespace OrangeHRMSpecFlow.StepDefinitions
 {
     [Binding]
-    public sealed class AddUserFromAdminPage
+    public sealed class AdminStep
     {
-        InvokeTheBrowser invokeTheBrowser = new InvokeTheBrowser();
-        LoginPage loginPage = new LoginPage();
         AdminPage adminPage = new AdminPage();
         AddUserPage addUserPage = new AddUserPage();
-        const string targetURL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-
-        [Given(@"the user in on the OrangeHRM login page")]
-        public void GivenTheUserInOnTheOrangeHRMLoginPage()
-        {
-            invokeTheBrowser.BrowserAndDriverInvoation();
-            CommonMethodOnPages.NavigateToURL(targetURL);
-        }
-
-        [When(@"user enters the Username")]
-        public void WhenUserEntersTheUsername()
-        {
-            loginPage.EnterUserName("Admin");
-        }
-
-        [When(@"user enter the Password")]
-        public void WhenUserEnterThePassword()
-        {
-            loginPage.EnterPassword("admin123");
-        }
-
-        [When(@"user clicks on the login button")]
-        public void WhenUserClicksOnTheLoginButton()
-        {
-            loginPage.ClickOnTheLogInButton();
-        }
 
         [When(@"user clicks on the Admin button")]
         public void WhenUserClicksOnTheAdminButton()
@@ -96,10 +69,28 @@ namespace OrangeHRMSpecFlow.StepDefinitions
         [Then(@"the user is successfully added")]
         public void ThenTheUserIsSuccessfullyAdded()
         {
-            //addUserPage.CheckIfUserAdded();
+            //pending
 
-            invokeTheBrowser.DriverQuit();
         }
 
+        // Scenario 2
+
+        [When(@"user verify if the record found in admin page")]
+        public void WhenUserVerifyIfTheRecordFoundInAdminPage()
+        {
+            Assert.IsTrue(adminPage.GetAllRecordFound() > 0);
+        }
+
+        [When(@"user enters the username, taken from one of the record found")]
+        public void WhenUserEntersTheUsernameTakenFromOneOfTheRecordFound()
+        {
+            Assert.IsTrue(adminPage.VerificationIfUserIsDisplayedOnSearch() > 0);
+        }
+
+        [Then(@"verify is the result is displayed or not")]
+        public void ThenVerifyIsTheResultIsDisplayedOrNot()
+        {
+            //pending
+        }
     }
 }
