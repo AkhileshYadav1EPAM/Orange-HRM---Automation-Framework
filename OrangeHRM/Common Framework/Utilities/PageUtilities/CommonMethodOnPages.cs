@@ -2,8 +2,10 @@
 using Common_Framework.BrowserInvocation;
 using Common_Framework.Extension_Method;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace Common_Framework.Utilities.PageUtilities
@@ -26,7 +28,6 @@ namespace Common_Framework.Utilities.PageUtilities
         public static void SendKeysToInputField(By elementToSendKeys, string key)
         {
             CommonMethodOnPages.WebDriverWaiting(elementToSendKeys);
-            InvokeTheBrowser.driver.FindElement(elementToSendKeys).Clear();
             InvokeTheBrowser.driver.FindElement(elementToSendKeys).SendKeys(key);
         }
 

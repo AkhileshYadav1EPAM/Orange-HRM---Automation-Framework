@@ -1,6 +1,7 @@
 ﻿using Common_Framework.BrowserInvocation;
 using Common_Framework.Utilities.PageUtilities;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace OrangeHRM_Pages.Leave
 
         #region Locators
         By leaveButton => By.XPath("(//span[contains(string(), 'Leave')])[1]");
-        By formDate => By.XPath("(//input[@class=\"oxd-input oxd-input--active\"])[2]");
+        By fromDate => By.XPath("(//input[@class=\"oxd-input oxd-input--active\"])[2]");
         By toDate => By.XPath("(//input[@class=\"oxd-input oxd-input--active\"])[3]");
         By searchButton => By.XPath("//button[@type=\"submit\"]");
         By oneRecordDetails => By.XPath("(//div[@class=\"oxd-table-row oxd-table-row--with-border\"])[2]");
@@ -57,9 +58,19 @@ namespace OrangeHRM_Pages.Leave
 
         public void PutStartAndEndDateInRespectiveField()
         {
-            CommonMethodOnPages.WebDriverWaiting(formDate);
-            CommonMethodOnPages.SendKeysToInputField(formDate, startDate);
-            CommonMethodOnPages.SendKeysToInputField(toDate, endDate);
+            CommonMethodOnPages.WebDriverWaiting(fromDate);
+            Actions actions = new Actions(InvokeTheBrowser.driver);
+            actions.MoveToElement(InvokeTheBrowser.driver.FindElement(fromDate))
+                .DoubleClick()
+                .Click()
+                .SendKeys(Keys.Backspace)
+                .SendKeys(startDate).SendKeys(Keys.Tab).Build().Perform();
+
+            actions.MoveToElement(InvokeTheBrowser.driver.FindElement(toDate))
+                .DoubleClick()
+                .Click()
+                .SendKeys(Keys.Backspace)
+                .SendKeys(endDate).SendKeys(Keys.Tab).Build().Perform();
         }
 
         public void ClickOnSearchButton()
